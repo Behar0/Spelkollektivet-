@@ -1,0 +1,310 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+} 
+
+.intro {
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('CurriculumBackground.png');
+    background-size: cover; 
+    background-position: center; 
+    opacity: 0.1;
+    z-index: -1; 
+}
+
+.Curriculumh1 {
+    margin-top: 80px; 
+    margin-left: 10px;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0;
+    margin-top: 20px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #3498db;
+    z-index: 0;
+}
+
+.marker {
+    width: 30px;
+    height: 30px;
+    background-color: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+.marker:hover {
+    transform: scale(1.1);
+}
+
+.label {
+    position: absolute;
+    top: -30px; 
+    white-space: nowrap;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 20px;
+    background-color: transparent;
+    text-align: left;
+}
+
+.Curriculum-img {
+    width: 200px; 
+    height: auto;
+}
+
+.Curriculum-imgFinal {
+    width: 400px; 
+    height: auto;
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;  
+}
+
+.colr:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;    
+}
+.logo{
+    width: 80px;
+    margin-bottom: 30px;        
+}
+.col h3{
+    width: fit-content; 
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a:hover{
+    border-bottom: 2px solid cyan;
+    transition: all 0.1s ease;  
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .Newsletter-Mail{
+    font-size: 18px;
+    margin-right: 10px; 
+}
+
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;  
+}
+
+form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;    
+}
+
+from button .Newsletter-Arrow {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .apps{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 35px;
+    color: lightcyan;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; 
+
+}
+
+.social-icons .apps:hover {
+    transform: scale(1.2);  
+}
+
+hr{
+    width: 90%; 
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+    transform: translateY(-80px); 
+}
+
+.underline {
+    width: 100%;    
+    height: 5px;
+    background: lightcyan;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+}
+
+
+@media (max-width 700px){
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;   
+    }
+    .col:nth-child(2), col:nth-child(3){
+        flex-basis: 100%;   
+    }
+}
+
+.logoFooter {
+    max-width: 255px;
+    height: auto;
+    transform: scale(1.2);
+    position: relative; 
+    top: -80px; /
+    left: -20px; 
+}
+
+.TextFooter {
+    transform: translateY(-60px); 
+    display: inline-block;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: rgba(0, 0, 0, 0.5); 
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+header.scrolled {
+    padding: 1px 10%;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.logo img {
+    height: 30px; 
+    transition: height 0.3s ease;
+}
+
+.logo.scrolled img {
+    height: 30px; /* Smaller logo on scroll */
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: floralwhite;
+}
+
+.navlist {
+    display: flex ;
+}
+
+.site-name {
+    color: antiquewhite;
+    margin-left: 20px;
+    font-size: 24px;
+    transition: font-size 0.3s ease;
+}
+
+.navlist a {
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+} 
+
+.navlist a:hover{
+    border-bottom: 2px solid whitesmoke;
+}
+
+#menu-icon{
+    color: navajowhite;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
