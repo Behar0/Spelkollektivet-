@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Spelkollektivet</title>
+	
+	<link rel="stylesheet" type="text/css" href="SpelkollektivetCSS.css"> <!-- css/... link? --> <!-- Bug, forgot, to add css/Spelkollektivet had only Spelkollektivet... -->
+	
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <a href="#" class="logo"><img src="IQ_Logo_White.png" alt="Logo"></a>
+            <span class="site-name">Spelkollektivet</span>
+        </div>
+        <ul class="navlist">
+            <li><a href="SpelkollektivetIndex.html">Home</a></li> <!--Bug, every link is only going to curriculum page? -->
+            <li><a href="SpelkollektivetAboutUs.html">About</a></li>
+            <li><a href="SpelkollektivetCurriculum.html">Curriculum</a></li>
+            <li><a href="SpelkollektivetFind-us.html">Find Us</a></li> <!-- Bug, link is Find-us.html, not Findus.html -->
+            <li><a href="SpelkollektivetApply.html">Apply</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- scrollreveal effect -->
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script type="text/javascript" src="SpelkollektivetJAVA.js"></script> <!-- Bug, java is supposed to be placed in body, not head. -->
+
+	<section class="hero"> 
+		<video autoplay muted loop id="bg-video">
+ 			<source src="indiegame-complilation.mp4" type="video/mp4">
+        </video>
+		<div class="hero-text">
+			<h5>Welcome to Spelkollektivet</h5>
+            <h1>Learn Game Development</h1>
+            <p>Join our course and start your journey in game development.</p>
+            <a href="SpelkollektivetApply" class="cta">Apply Now</a>
+		</div>
+
+	</section>
+
+	<div class="icons">
+		<a href="https://www.instagram.com/spelkollektivet/?hl=en"><i class="ri-instagram-line"></i></a>
+		<a href="https://www.youtube.com/@Spelkollektivet/featured"><i class="ri-youtube-line"></i></a>
+		<a href="https://twitter.com/spelkollektiv?lang=en"><i class="ri-twitter-x-line"></i></a>
+
+	</div>
+
+	   <div class="info-section">
+        <img src="maxresdefault (1).jpg" alt="Game Development">
+        <div class="info-text">
+            <h2>Spelkollektivet</h2>
+            <p>The Indie Quest is a unique course blending programming, art, and production, tailored for indie game creation. Dive straight into practical  learning through game projects instead of isolated subjects. Start as an apprentice, mastering coding through missions, then progress to advanced concepts while crafting your own games. Manage projects effectively to prototype and polish your creations for sharing. Choose any visual style for your games, with personalized study plans covering art fundamentals and technical aspects. Whether it's pixel art, 3D, traditional drawing, or digital painting, we've got you covered. <a href="SpelkollektivetCurriculum.html">Explore the curriculum for more details.</a></p>
+        </div>
+    </div>
+
+	<footer>
+		<div id="footer"></div>
+		<div class="row">
+			<div class="col">
+				<img src="IQ_Logo_White.png" class="logoFooter"> <!-- logoF, bug picture to small, tehn too big having issues fixing, the pictures always ruin the mood -->
+				<p class="TextFooter">In autumn 2020, Spelkollektivet started its adult education in game development, The Indie Quest. It is a komvux training that focuses on getting the students ready to start their own indie game projects and goes through the basics of both programming and graphics.</p>
+			</div>
+			<div class="col">
+				<h3>Find Us!<div class="underline"><span></span></div> </h3>
+				<p>Spelkollektivet</p>
+				<p>Gamla vägen 12</p>
+				<p>362 51 Väckelsång</p>
+				<p class="email-id">contact@spelkollektivet.com	
+				<h4><i class="ri-phone-fill"></i>   +46 709-96 17 80</h4>
+			</div>
+
+			<div class="col">
+				<h3>Links<div class="underline"><span></span></div> </h3>
+					<ul>
+  					  <li><a href="SpelkollektivetIndex.html">Home</a></li>
+            		  <li><a href="SpelkollektivetAboutUs.html">About</a></li>
+       			      <li><a href="SpelkollektivetCurriculum.html">Curriculum</a></li>
+   			          <li><a href="SpelkollektivetFindus.html">Find Us</a></li>
+             		  <li><a href="SpelkollektivetApply.html">Apply</a></li>
+					</ul>
+				</div>
+			<div class="col"> <!-- bug, forgot to delete the </div< tag in the end, the newsletter wasnt showing -->
+				<h3>Newsletter <div class="underline"><span></span></div> </h3>
+				<form>
+					<i class="Newsletter-Mail ri-mail-fill"></i>
+					<input type="email" placeholder="Enter your email id" required>
+					<button type="submit"><i class="Newsletter-Arrow ri-arrow-right-double-fill"></i></button>
+				</form>
+
+				<div class="social-icons">
+					<a href="https://www.facebook.com/spelkollektivet/?locale=sv_SE" i class="apps ri-facebook-circle-fill"></i></a>
+					<a href="https://www.youtube.com/@Spelkollektivet/featured" i class="apps ri-youtube-fill"></i></a>
+					<a href="https://www.instagram.com/spelkollektivet/?hl=en" i class="apps ri-instagram-fill"></i></a>
+					<a href="https://twitter.com/spelkollektiv?lang=en" i class="apps ri-twitter-x-fill"></i></a>
+				</div>
+			</div>
+		<hr>
+	</footer>
+</body>
+</html>

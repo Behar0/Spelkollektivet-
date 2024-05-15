@@ -1,22 +1,24 @@
-let menu = document.querySelector('#menu-icon');
-let navlist = document.querySelector('.navlist');
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM fully loaded and parsed');
+    try {
+        const heroText = document.querySelector('.hero-text');
+        const icons = document.querySelector('.icons');
+        console.log('Hero Text:', heroText);
+        console.log('Icons:', icons);
 
-menu.onclick = () => {
-	menu.classList.toggle('bx-x');
-	navlist.classList.toggle('open')
-};
+        const sr = ScrollReveal({
+            distance: '65px',
+            duration: 2600,
+            delay: 450,
+            reset: true
+        });
 
-const sr = ScrollReveal ({
-	distance: '65px',
-	duration: 2600,
-	delay: 450,
-	reset: true
+        sr.reveal('.hero-text', {delay: 200, origin: 'top'});
+        sr.reveal('.icons', {delay: 500, origin: 'left'});
+    } catch (error) {
+        console.error('ScrollReveal error:', error);
+    }
 });
-
-sr.reveal('.hero-text',{delay:200, origin:'top'});
-sr.reveal('.icons',{delay:500, origin:'left'});
-sr.reveal('.scroll-down',{delay:500, origin:'right'})
-
 
 document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('header');

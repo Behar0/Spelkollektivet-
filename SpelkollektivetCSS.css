@@ -1,0 +1,444 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	list-style: none;
+} 
+
+/* Bug, forgot to add *, the code above was not functionable. */
+
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+header.scrolled{
+    padding: 1px 10%;
+    background: rgba(0, 0, 0, 0.8); 
+}
+
+.logo img{
+    height: 30px; 
+    transition: height 0.3s ease;
+}
+
+.logo.scrolled img{
+    height: 30px; 
+}
+
+.site-name{
+    color: antiquewhite;
+    margin-left: 20px;
+    font-size: 24px;
+    transition: font-size 0.3s ease;
+}
+
+.hero{
+    position: relative;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.info-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 10%;
+}
+
+.info-section img{
+    width: 50%;
+}
+
+.info-text{
+    width: 40%;
+    padding: 20px;
+}
+
+.logo{
+	font-size: 30px;
+	font-weight: 700;
+	color: floralwhite;
+}
+
+.navlist{
+	display: flex ;
+}
+
+.navlist a{
+	color: white;
+	margin-left: 60px;
+	font-size: 15px;
+	font-weight: 600;
+	border-bottom: 2px solid transparent;
+	transition: all .55s ease;
+} 
+
+.navlist a:hover{
+	border-bottom: 2px solid whitesmoke;
+}
+
+#menu-icon{
+	color: navajowhite;
+	font-size: 35px;
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+}
+
+.hero{
+	height: 100%;
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(245.59deg, #0a3c5e 0%, #073c50 28.53%, #042b3d 75.52%);
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 2rem;
+}
+
+section{
+	padding: 0 19%;
+}
+
+.hero-text h5{
+	font-size: 14px;
+	font-weight: 400;
+	color: ghostwhite;
+	margin-bottom: 40px;
+}
+
+.hero-text h1{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 90px;
+	line-height: 1;
+	color: antiquewhite;
+	margin: 0 0 45px;
+}
+
+.hero-text p{
+	color: white;
+	font-size: 15px;
+	line-height: 1.9;
+	margin-bottom: 40px;
+}
+
+
+.hero-text a{
+	display: inline-block;
+	color: papayawhip;
+	background: #4d9559;
+	border: 1px solid transparent;
+	padding: 12px 30px;
+	line-height: 1.4;
+	font-size: 14px;
+	font-weight: 500;
+	border-radius: 30px;
+	text-transform: uppercase;
+	transition: all .55s ease;
+}
+
+.hero-text a:hover{
+	background: transparent;
+	border: 1px solid white;
+	transform: translateX(8px);
+}
+
+.hero-text a.ctaa{
+	background: transparent; 
+	border: 1px solid white; 
+	margin-left: 20px; 
+}
+
+.hero-text a.ctaa i{
+	vertical-align: middle;-
+	margin-right: 5px;
+}
+
+.icons{
+	position: absolute;
+	top: 50%;
+	padding: 0 9%;
+	transform: translateY(-50%);
+}
+
+.icons i{
+	display: block;
+	margin: 26px 0;
+	font-size: 24px;
+	color: white;
+	transition: all .50s ease;
+}
+ 
+.icons i:hover{
+	color: #4d9559;
+	transform: translateY(-5px);
+}
+
+/* RESPONSIV PAGE1 */
+ 
+@media (max-width: 1535px){
+	header{
+		padding: 15px 3%;
+		transition: .2s;
+	}
+	.icons{
+		padding: 0 3%;
+		transition: .2s;
+	}	
+	
+}
+
+@media (max-width: 1460px){
+		section{
+			padding: 0 12%;
+			transition: .2s;
+		}
+}
+@media (max-width: 1340px){
+	.hero-text h1{
+		font-size: 75px;
+		margin: 0 0 30px;
+
+	}
+	.hero-text h5{
+		margin-bottom: 25px;
+	}
+}
+
+@media (max-width: 1195px){
+	section{ 
+		padding: 0 3%; 
+		transition: .2s; 
+	}
+	.hero-text{ 
+		padding-top: 115px;
+	} 
+	.hero{ 
+		height: 100%; 
+		gap: 1rem; 
+		grid-template-columns: 1; 
+	} 
+	.icons{
+		display: none;
+	}
+	
+}
+
+@media (max-width: 990px){
+	#menu-icon{
+		display: block;
+	}
+	.navlist{
+		position: absolute;
+		top: 100%;
+		right: 0;
+		width: 300px;
+		height: 40vh;
+		background: #4d9559;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding: 50px 20px;
+		transition: all .55s ease;
+	}
+	.navlist a{
+		margin-left: 0;
+		display: block;
+		margin: 7px 0;
+	}
+	.navlist.open{
+		right: 0;
+	}
+}
+
+/* Instead of programming Java and css alone, I decided to mix them toghether, for each website, making a more finished product quicker */
+
+/* Footer */
+
+footer{
+	width: 100%;
+	position: relative;
+	bottom: 0;
+	background: linear-gradient(to right, #00093c, #2d0b00);
+	color: #fff;
+	padding: 100px 0 30px;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.row{
+	width: 85%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.col{
+	flex-basis: 25%;
+	padding: 10px;	
+}
+
+.colr:nth-child(2), .col:nth-child(3){
+	flex-basis: 15%;	
+}
+.logo{
+	width: 80px;
+	margin-bottom: 30px;		
+}
+.col h3{
+	width: fit-content;	
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.email-id{
+	width: fit-content;
+	border-bottom: 1px solid #ccc;
+	margin: 20px 0;
+}
+
+ul li{
+	list-style: none;
+	margin-bottom: 12px;
+}
+
+ul li a:hover{
+	border-bottom: 2px solid cyan;
+	transition: all 0.1s ease;	
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+form{
+	padding-bottom: 15px;
+	display: flex;
+	align-items: center;	
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 50px;
+}
+
+form .Newsletter-Mail{
+	font-size: 18px;
+	margin-right: 10px;	
+}
+
+form input{
+	width: 100%;
+	background: transparent;
+	color: #ccc;
+	border: 0;
+	outline: none;	
+}
+
+form button {
+	background: transparent;
+	border: 0;
+	outline: none;
+	cursor: pointer;	
+}
+
+from button .Newsletter-Arrow {
+	font-size: 16px;
+	color: #ccc;
+}
+
+.social-icons .apps{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 35px;
+	color: lightcyan;
+	margin-right: 15px;
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out;	
+
+}
+
+.social-icons .apps:hover {
+	transform: scale(1.2);	
+}
+
+hr{
+	width: 90%;	
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	margin: 20px auto;
+	transform: translateY(-80px); 
+}
+
+.underline {
+	width: 100%;	
+	height: 5px;
+	background: lightcyan;
+	border-radius: 3px;
+	position: absolute;
+	top: 25px;
+}
+
+
+@media (max-width 700px){
+	footer{
+		bottom: unset;
+	}
+	.col{
+		flex-basis: 100%;	
+	}
+	.col:nth-child(2), col:nth-child(3){
+		flex-basis: 100%;	
+	}
+}
+
+.logoFooter {
+    max-width: 255px;
+    height: auto;
+    transform: scale(1.2);
+    position: relative; 
+    top: -80px; /
+    left: -20px; 
+}
+
+.TextFooter {
+    transform: translateY(-60px); 
+    display: inline-block;
+}
+
+/* nth-child koden, tillagd, kan inte den */
+
+
+
+
