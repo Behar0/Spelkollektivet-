@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="CSS.css"> <!-- css/... link? --> <!-- Bug, forgot, to add css/Spelkollektivet had only Spelkollektivet... -->
 	
 	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,52 +73,100 @@
         </div>
     </div>
 
-	<footer>
-    <div class="footer-container">
-        <div class="footer-row">
-            <div class="footer-col">
-                <img src="logofront.png" alt="Spelkollektivet Logo" class="logo-footer">
-                <p class="footer-text">
-                   Spelkollektivet launched The Indie Quest in autumn 2020, a komvux course in game development focusing on programming and graphics for creating indie games!</p>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/fontawesome.css">
+    <link rel="stylesheet" href="path/to/your-stylesheet.css">
+    <title>Footer</title>
+</head>
+<body>
+    <footer class="footer-section">
+        <div class="footer-content">
+            <div class="footer-logo-text">
+                <a href="index.html" class="footer-logo"><img src="IQ_Logo_White_Roof.png" class="img-fluid" alt="logo"></a>
+                <div class="footer-text">
+                    <p>Lorem Ipsum is simply dummy text of Wappaadoopt ladopa rooopidi sooooooooom. bababoey saoomoloooooor saroif lisssss. eriiifs iena.</p>
+                </div>
             </div>
-            <div class="footer-col">
-                <h3>Find Us!<div class="underline"><span></span></div></h3>
-                <address>
-                    Spelkollektivet<br>
-                    Gamla vägen 12<br>
-                    362 51 Väckelsång<br>
-                    <a href="mailto:contact@spelkollektivet.com" class="email-link">contact@spelkollektivet.com</a><br>
-                    <a href="tel:+46709961780" class="phone-link">+46 709-96 17 80</a>
-                </address>
-            </div>
-            <div class="footer-col">
-                <h3>Links<div class="underline"><span></span></div></h3>
-                <ul class="footer-links">
-                    <li><a href="Index.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Curriculum.html">Curriculum</a></li>
-                    <li><a href="Find-us.html">Find Us</a></li>
-                    <li><a href="Apply.html">Apply</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Newsletter <div class="underline"><span></span></div></h3>
-                <div class="newsletter-form">
-  			    <input type="email" placeholder="Enter your email" required>
-    			<button id="btn">Subscribe</button>
-
-			</div>
-
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/spelkollektivet/?locale=sv_SE" class="social-link"><i class="ri-facebook-circle-fill"></i></a>
-                    <a href="https://www.youtube.com/@Spelkollektivet/featured" class="social-link"><i class="ri-youtube-fill"></i></a>
-                    <a href="https://www.instagram.com/spelkollektivet/?hl=en" class="social-link"><i class="ri-instagram-fill"></i></a>
-                    <a href="https://twitter.com/spelkollektiv?lang=en" class="social-link"><i class="ri-twitter-x-fill"></i></a>
+            <div class="logo-icons">
+                <div class="single-cta">
+                    <i class="fab fa-facebook-f"></i>
+                    <h3>Facebook</h3>
+                    <p>Follow us on Facebook</p>
+                </div>
+                <div class="single-cta">
+                    <i class="fab fa-twitter"></i>
+                    <h3>Twitter</h3>
+                    <p>Follow us on Twitter</p>
+                </div>
+                <div class="single-cta">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>Follow us on Instagram</p>
                 </div>
             </div>
         </div>
-        <hr>
+        <div class="divider"></div>
+        <div class="footer-content">
+            <div class="footer-links">
+                <div class="footer-widget-heading">
+                    <h3>Useful Links</h3>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Curriculum</a></li>
+                    <li><a href="#">Find us</a></li>
+                    <li><a href="#">FAQ?</a></li>
+                    <li><a href="#">Apply</a></li>
+                </ul>
+            </div>
+            <div class="follow-us">
+                <div class="footer-widget-heading">
+                    <h3>Follow us</h3>
+                </div>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="subscribe-section">
+                <div class="footer-widget-heading">
+                    <h3>Subscribe to our newsletter</h3>
+                </div>
+                <div class="subscribe-form">
+                    <form action="#">
+                        <input type="text" placeholder="Email Address">
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright-area">
+        <p>&copy; 2024, All Right Reserved <a href="index.html">Spelkollektivet</a></p>
     </div>
-</footer>
+<script> /* Javascript added */ 
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.querySelector('.subscribe-form button');
+
+            button.addEventListener('mousemove', (e) => {
+                const rect = button.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                button.style.setProperty('--x', `${x}px`);
+                button.style.setProperty('--y', `${y}px`);
+            });
+
+            button.addEventListener('mouseleave', () => {
+                button.style.setProperty('--opacity', 0);
+            });
+        });
+    </script>
 </body>
 </html>
