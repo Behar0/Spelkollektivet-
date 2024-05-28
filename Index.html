@@ -73,57 +73,40 @@
         </div>
     </div>
 
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="path/to/fontawesome.css">
-    <link rel="stylesheet" href="path/to/your-stylesheet.css">
-    <title>Footer</title>
-</head>
-<body>
-    <footer class="footer-section">
+ <footer class="footer-section">
         <div class="footer-content">
             <div class="footer-logo-text">
                 <a href="index.html" class="footer-logo"><img src="IQ_Logo_White_Roof.png" class="img-fluid" alt="logo"></a>
                 <div class="footer-text">
-                    <p>Lorem Ipsum is simply dummy text of Wappaadoopt ladopa rooopidi sooooooooom. bababoey saoomoloooooor saroif lisssss. eriiifs iena.</p>
+                    <p>Spelkollektivet launched The Indie Quest in autumn 2020, a komvux course in game development focusing on programming and graphics for creating indie games!</p>
                 </div>
             </div>
             <div class="logo-icons">
-                <div class="single-cta">
-                    <i class="fab fa-facebook-f"></i>
-                    <h3>Facebook</h3>
-                    <p>Follow us on Facebook</p>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="contact-text">
+                        <h3>Find us</h3>
+                        <p>Spelkollektivet<br>Gamla vägen 12<br>362 51 Väckelsång</p>
+                    </div>
                 </div>
-                <div class="single-cta">
-                    <i class="fab fa-twitter"></i>
-                    <h3>Twitter</h3>
-                    <p>Follow us on Twitter</p>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="contact-text">
+                        <h3>Call us</h3>
+                        <p>+46 709-96 17 80</p>
+                    </div>
                 </div>
-                <div class="single-cta">
-                    <i class="fab fa-instagram"></i>
-                    <h3>Instagram</h3>
-                    <p>Follow us on Instagram</p>
+                <div class="contact-item">
+                    <i class="fa-regular fa-envelope-open"></i>
+                    <div class="contact-text">
+                        <h3>Mail us</h3>
+                        <p><a href="contact@spelkollektivet.com">contact@spelkollektivet.com</p></a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="divider"></div>
         <div class="footer-content">
-            <div class="footer-links">
-                <div class="footer-widget-heading">
-                    <h3>Useful Links</h3>
-                </div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Curriculum</a></li>
-                    <li><a href="#">Find us</a></li>
-                    <li><a href="#">FAQ?</a></li>
-                    <li><a href="#">Apply</a></li>
-                </ul>
-            </div>
             <div class="follow-us">
                 <div class="footer-widget-heading">
                     <h3>Follow us</h3>
@@ -135,10 +118,24 @@
                     <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                 </ul>
             </div>
+            <div class="footer-links">
+                <div class="footer-heading">
+                    <h3>Useful Links</h3>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Curriculum</a></li>
+                    <li><a href="#">Find us</a></li>
+                    <li><a href="#">FAQ?</a></li>
+                    <li><a href="#">Apply</a></li>
+                </ul>
+            </div>
             <div class="subscribe-section">
                 <div class="footer-widget-heading">
                     <h3>Subscribe to our newsletter</h3>
                 </div>
+                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
                 <div class="subscribe-form">
                     <form action="#">
                         <input type="text" placeholder="Email Address">
@@ -151,22 +148,20 @@
     <div class="copyright-area">
         <p>&copy; 2024, All Right Reserved <a href="index.html">Spelkollektivet</a></p>
     </div>
-<script> /* Javascript added */ 
-        document.addEventListener('DOMContentLoaded', () => {
-            const button = document.querySelector('.subscribe-form button');
-
-            button.addEventListener('mousemove', (e) => {
-                const rect = button.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                button.style.setProperty('--x', `${x}px`);
-                button.style.setProperty('--y', `${y}px`);
-            });
-
-            button.addEventListener('mouseleave', () => {
-                button.style.setProperty('--opacity', 0);
-            });
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const button = document.querySelector('.subscribe-form button');
+        button.addEventListener('mousemove', (e) => {
+            const rect = button.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            button.style.setProperty('--x', `${x}px`);
+            button.style.setProperty('--y', `${y}px`);
         });
-    </script>
+        button.addEventListener('mouseleave', () => {
+            button.style.setProperty('--opacity', 0);
+        });
+    });
+</script>
 </body>
 </html>
