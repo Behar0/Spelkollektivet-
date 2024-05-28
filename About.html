@@ -1,24 +1,19 @@
 <!DOCTYPE html> 
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Spelkollektivet</title>
-	<link rel="stylesheet" type="text/css" href="CSS.css"> <!-- css/... link? --> <!-- Bug, forgot, to add css/Spelkollektivet had only Spelkollektivet... -->
-	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spelkollektivet</title>
+    <link rel="stylesheet" type="text/css" href="AboutCSS.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-
-	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
 <body>
-    <header id="header">
+     <header id="header">
     <img src="IQ_Logo_White.png" alt="" class="logo">
     <nav>
         <ul class="navlinks">
@@ -40,37 +35,69 @@
     </nav>
 </header>
 
-<!-- scrollreveal effect -->
-<script src="https://unpkg.com/scrollreveal"></script>
-<script type="text/javascript" src="JAVA.js"></script>
+    <!-- scrollreveal effect -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="JAVA.js"></script> 
 
-<section class="hero">
-    <video autoplay muted loop id="bg-video">
-        <source src="indiegame-complilation.mp4" type="video/mp4">
-    </video>
-    <div class="hero-text">
-        <h5>Welcome to Spelkollektivet</h5>
-        <h1>Learn Game Development</h1>
-        <p>Join our course and start your journey in game development.</p>
-        <a href="Apply.html" class="cta">Apply Now</a>
-    </div>
-</section>
-
-<div class="icons">
-    <a href="https://www.instagram.com/spelkollektivet/?hl=en"><i class="ri-instagram-line"></i></a>
-    <a href="https://www.youtube.com/@Spelkollektivet/featured"><i class="ri-youtube-line"></i></a>
-    <a href="https://twitter.com/spelkollektiv?lang=en"><i class="ri-twitter-x-line"></i></a>
-</div>
-
-	   <div class="info-section">
-        <img src="maxresdefault (1).jpg" alt="Game Development">
-        <div class="info-text">
-            <h2>Spelkollektivet</h2>
-            <p>The Indie Quest is a unique course blending programming, art, and production, tailored for indie game creation. Dive straight into practical  learning through game projects instead of isolated subjects. Start as an apprentice, mastering coding through missions, then progress to advanced concepts while crafting your own games. Manage projects effectively to prototype and polish your creations for sharing. Choose any visual style for your games, with personalized study plans covering art fundamentals and technical aspects. Whether it's pixel art, 3D, traditional drawing, or digital painting, we've got you covered. <a href="Curriculum.html">Explore the curriculum for more details.</a></p>
-        </div>
-    </div>
-
- <footer class="footer-section">
+    <main>
+            <strong><h2>Explore Our Journey</h2><strong>
+            <strong><p>Discover the story behind Spelkollektivet and our mission to revolutionize game development education.</p><strong>
+            <div class="videos-container">
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/J3kZ9Gt4Ly0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/TlTZBMq0HSo" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="pricing">
+            <h2>Pricing Plans</h2>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>SEK</th>
+                        <th>EURO</th>
+                        <th>USD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Daily</td>
+                        <td>300 SEK</td>
+                        <td>~27 EURO</td>
+                        <td>~29 USD</td>
+                    </tr>
+                    <tr>
+                        <td>Weekly</td>
+                        <td>2100 SEK</td>
+                        <td>~189 EURO</td>
+                        <td>~201 USD</td>
+                    </tr>
+                    <tr>
+                        <td>Monthly</td>
+                        <td>~9000 SEK</td>
+                        <td>~810 EURO</td>
+                        <td>~860 USD</td>
+                    </tr>
+                    <tr>
+                        <td>Student (Monthly)</td>
+                        <td>~6750 SEK</td>
+                        <td>~608 EURO</td>
+                        <td>~745 USD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="apply-now">
+            <h2>Join Us</h2>
+            <p>Ready to start your journey in game development? Apply now and be part of our next cohort!</p>
+            <button onclick="location.href='Apply.html'">Apply Now!</button>
+        </section>
+    </main>
+    
+   <footer class="footer-section">
         <div class="footer-content">
             <div class="footer-logo-text">
                 <a href="index.html" class="footer-logo"><img src="IQ_Logo_White_Roof.png" class="img-fluid" alt="logo"></a>
