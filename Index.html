@@ -19,7 +19,7 @@
 
 <body>
     <header id="header">
-    <img src="IQ_Logo_White.png" alt="" class="logo">
+    <img src="IQ_Logo_White.png" href="Index.html" class="logo">
     <nav>
         <ul class="navlinks">
             <li class="items"><a href="Index.html">Home</a></li>
@@ -46,7 +46,7 @@
 
 <section class="hero">
     <video autoplay muted loop id="bg-video">
-        <source src="indiegame-complilation.mp4" type="video/mp4">
+        <source src="hero-spelkollektivet-video.mp4" type="video/mp4">
     </video>
     <div class="hero-text">
         <h5>Welcome to Spelkollektivet</h5>
@@ -66,7 +66,7 @@
         <img src="maxresdefault (1).jpg" alt="Game Development">
         <div class="info-text">
             <h2>Spelkollektivet</h2>
-            <p>The Indie Quest is a unique course blending programming, art, and production, tailored for indie game creation. Dive straight into practical  learning through game projects instead of isolated subjects. Start as an apprentice, mastering coding through missions, then progress to advanced concepts while crafting your own games. Manage projects effectively to prototype and polish your creations for sharing. Choose any visual style for your games, with personalized study plans covering art fundamentals and technical aspects. Whether it's pixel art, 3D, traditional drawing, or digital painting, we've got you covered. <a href="Curriculum.html">Explore the curriculum for more details.</a></p>
+            <p>The Indie Quest is a unique course blending programming, art, and production, tailored for indie game creation. Dive straight into practical  learning through game projects instead of isolated subjects. Start as an apprentice, mastering coding through missions, then progress to advanced concepts while crafting your own games. Manage projects effectively to prototype and polish your creations for sharing. Choose any visual style for your games, with personalized study plans covering art fundamentals and technical aspects. Whether it's pixel art, 3D, traditional drawing, or digital painting, we've got you covered. <a href="Curriculum.html" class="index-information-link">Explore the curriculum for more details.</a></p>
         </div>
     </div>
 
@@ -142,22 +142,7 @@
         </div>
     </footer>
     <div class="copyright-area">
-        <p>&copy; 2024, All Right Reserved <a href="index.html">Spelkollektivet</a></p>
+        <p>&copy; 2024, All Right Reserved Spelkollektivet</p>
     </div>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const button = document.querySelector('.subscribe-form button');
-        button.addEventListener('mousemove', (e) => {
-            const rect = button.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            button.style.setProperty('--x', `${x}px`);
-            button.style.setProperty('--y', `${y}px`);
-        });
-        button.addEventListener('mouseleave', () => {
-            button.style.setProperty('--opacity', 0);
-        });
-    });
-</script>
 </body>
 </html>

@@ -92,17 +92,22 @@ button:hover {
     transform: translateX(100%);
 }
 
+.sidebar li a {
+	color: white;
+}
+
 .sidebar li {
     width: 100%;
     margin: 25px 0;
     text-shadow: 1px 1px 2px black;
 }
+
 nav ion-icon {
     font-size: 2em;
     cursor: pointer;
 }
 
-/* Shrink on Scroll */
+/* Shrink n' Scroll */
 
 .header-box {
     width: 100%;
@@ -149,7 +154,7 @@ main {
 	height: 100%;
 	width: 100%;
 	min-height: 100vh;
-	background: linear-gradient(245.59deg, #0a3c5e 0%, #073c50 28.53%, #042b3d 75.52%);
+	background: linear-gradient(245.59deg, #0a3c5e 0%, #073c50 28.53%, #042b3d 75.52%); 
 	position: relative;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -180,7 +185,6 @@ main {
 	margin-bottom: 40px;
 }
 
-
 .hero-text a{
 	display: inline-block;
 	color: papayawhip;
@@ -208,7 +212,7 @@ main {
 }
 
 .hero-text a.ctaa i{
-	vertical-align: middle;-
+	vertical-align: middle;
 	margin-right: 5px;
 }
 
@@ -243,30 +247,50 @@ main {
     opacity: 0.5;
 }
 
-.info-section{
+.info-section {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    padding: 50px 10%;
-	background-color: #2f294b;    
+    padding: 50px 10%; 
+    background-color: #2f294b;
 }
 
-.info-section img{
+.info-section img {
     width: 50%;
+    max-width: 100%; 
+    order: -1; 
 }
 
-.info-text{
-    width: 40%;
+.info-text {
+    width: 100%; 
     padding: 20px;
     color: ghostwhite;
+    text-align: center;
 }
 
-section{
-	padding: 0 19%;
+section {
+    padding: 0 19%;
 }
 
-/* RESPONSIV PAGE1 */
- 
+a.index-information-link {
+	color: blue; 
+    text-decoration: none;
+}
+        
+a.index-information-link:visited {
+	color: red; 
+    text-decoration: none;
+}
+        
+a.:hover {
+text-decoration: underline
+}
+
+a.index-information-link:active {
+color: red;
+}
+
+/* RESPONSIV PAGE1 */ 
 @media (max-width: 1535px){
 	header{
 		padding: 15px 3%;
@@ -279,12 +303,6 @@ section{
 	
 }
 
-@media (max-width: 1460px){
-		section{
-			padding: 0 12%;
-			transition: .2s;
-		}
-}
 @media (max-width: 1340px){
 	.hero-text h1{
 		font-size: 75px;
@@ -342,7 +360,571 @@ section{
 	}
 }
 
+@media screen and (max-width: 600px) {
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .navlinks {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navlinks li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+    .hero-text h5, .hero-text p, .hero-text a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text h5, .hero-text p, .hero-text a {
+        font-size: 12px;
+    }
+
+    .hero-text a {
+        padding: 10px 20px;
+    }
+}
+
 /* Instead of programming Java and css alone, I decided to mix them toghether, for each website, making a more finished product quicker */
+
+/* About 02 */ 
+
+#BodyAbout {
+    background-image: url('Indie-questscreenshot.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {  /* Fixes footer for the about section */ 
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+h2, p {
+    color: white;
+    background-color: ;
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navlist li {
+    padding: 0 15px;
+}
+
+.navlist a {
+    color: #333;
+    font-weight: bold;
+}
+
+.videos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.video {
+    flex: 1 1 45%; 
+    margin: 10px;
+}
+
+.video iframe {
+    width: 100%;
+    height: auto; 
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: ghostwhite;
+}
+
+.pricing th, .pricing td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.apply-now {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.apply-now button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.apply-now button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .videos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+
+    .pricing-table thead {
+        display: none;
+    }
+
+    .pricing-table tr {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .pricing-table td {
+        display: block;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .pricing-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    h2, p {
+        font-size: 1.2em;
+    }
+
+    .apply-now button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Curriculum 03 */ 
+
+#bodyCurriculum {
+    background-image: url('IQ_Background_Notes.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+#Curriculumh1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 120px;
+    background-color: rgba(253,187, 45, 0.5);
+}
+
+.intro {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fdbb2d);
+    background-size: 300% 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.marker {
+    position: relative;
+    margin: 10px;
+}
+
+.marker span {
+    background: #fdbb2d;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+    margin: 20px;
+    background: #2f294b;
+    border-radius: 10px;
+    max-width: 1000px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sectionCurriculum {
+    margin: 20px 0;
+    opacity: 0;
+}
+
+#sectionCurriculum h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#sectionCurriculum p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#sectionCurriculum ul {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+#sectionCurriculum ul li {
+    background: #fdbb2d;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 20px;  
+    border: 2px solid orange; 
+    color: #333;
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    h1.Curriculumh1 {
+        font-size: 2rem;
+        margin: 80px 0 20px;
+    }
+
+    #sectionCurriculum h2 {
+        font-size: 1.6rem;
+    }
+
+    .content {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .timeline {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1.Curriculumh1 {
+        font-size: 1.8rem;
+        margin: 60px 0 20px;
+    }
+
+    #sectionCurriculum h2 {
+        font-size: 1.4rem;
+    }
+
+    #sectionCurriculum p {
+        font-size: 0.9rem;
+    }
+
+    .timeline {
+        padding: 10px;
+    }
+
+    .marker span {
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1.Curriculumh1 {
+        font-size: 1.5rem;
+        margin: 40px 0 20px;
+    }
+
+    #sectionCurriculum h2 {
+        font-size: 1.2rem;
+    }
+
+    #sectionCurriculum p {
+        font-size: 0.8rem;
+    }
+
+    .marker span {
+        padding: 5px 10px;
+    }
+
+    .content {
+        padding: 10px;
+        margin: 10px;
+    } 
+}
+
+/* Find us 04 */
+
+#bodyFind {
+    background: url(IQ_Background_Notes.png);    
+}
+
+.map-container {
+    margin-top: 85px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map {
+    height: 300px;
+    width: 100%;
+}
+
+.contact-details {
+    margin-top: 20px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.contact-details a {
+    color: #4d9559;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.active {
+    border-bottom: 2px solid #4d9559;
+}
+
+@media screen and (max-width: 768px) {
+    .map-container {
+        margin-top: 55px;
+    }
+    
+    .map {
+        height: 200px;
+    }
+    
+    .contact-details p {
+        font-size: 14px; 
+    }
+}
+
+/* Apply 05 */
+
+#BodyApply {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: url(Indie-questscreenshot.png) no-repeat;
+  background-size: cover; 
+  background-position: center; 
+}
+
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: transparent;
+  padding: 25px;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+
+.container .form {
+  margin-top: 30px;
+}
+
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input-box label {
+  color: #333;
+}
+
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #2c2c2c;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.form .gender-box {
+  margin-top: 20px;
+}
+
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form .gender {
+  column-gap: 5px;
+}
+
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+
+.gender label {
+  color: #2c2c2c;
+}
+
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #2c2c2c;
+  font-size: 1rem;
+}
+
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(130, 106, 251);
+}
+
+.form button:hover {
+  background: rgb(88, 56, 250);
+}
+
+.input-box .contact-preference button {
+  height: 40px;
+  width: auto;
+  padding: 0 15px;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  background: rgb(130, 106, 251);
+  transition: all 0.2s ease;
+}
+
+.input-box .contact-preference button:hover {
+  background: rgb(88, 56, 250);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  
+  .container header {
+    font-size: 1.3rem;
+  }
+}
 
 /* Footer */
 
@@ -352,18 +934,6 @@ section{
     padding: 20px;
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 .footer-content {
@@ -420,10 +990,6 @@ section{
     font-size: 40px;
     margin-right: 10px; 
     transition: color 0.3s, transform 0.3s;
-}
-
-.logo-icons .contact-item:hover i {
-    transform: scale(1.1);
 }
 
 .logo-icons .contact-text {
@@ -485,16 +1051,6 @@ section{
     font-weight: 600;
     margin-bottom: 20px;
     position: relative;
-}
-
-.footer-heading h3::before { /* Pseudo */ 
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    height: 2px;
-    width: 50px;
-    background: firebrick;
 }
 
 .footer-links ul {
@@ -575,7 +1131,7 @@ section{
     background: #3e3e3e;
 }
 
-.subscribe-form button { /* Javacript added, and the --x --y code, thought the follow would be neat :P I tried achieving the effect without the java in CSS, but It is not possible.*/ 
+.subscribe-form button { 
     position: absolute;
     right: 0;
     background: transparent;
@@ -592,25 +1148,6 @@ section{
     font-size: 18px;
     cursor: pointer;
     background-clip: padding-box;
-    --x: 50%;
-    --y: 50%;
-    --opacity: 0;
-}
-
-.subscribe-form button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle at var(--x) var(--y), rgba(255, 255, 255, var(--opacity)) 0%, rgba(255, 255, 255, 0) 80%);
-    pointer-events: none;
-    transition: background 0.1s;
-}
-
-.subscribe-form button:hover::before {
-    --opacity: 0.3;
 }
 
 .subscribe-form button:hover {
@@ -620,9 +1157,8 @@ section{
 
 .copyright-area {
     background: linear-gradient(-45deg, #2e2b5f, #1e2d35, #6a1b9a, #004d40);
-    padding: 15px 0; /* Adjust padding */
+    padding: 15px 0; 
     text-align: center;
-    animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     color: white;
 }
@@ -635,14 +1171,12 @@ section{
 .footer-menu li a {
     font-size: 14px;
     color: bisque;
-    transition: color 0.3s;
 }
 
 .footer-menu li a:hover {
     color: firebrick;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;

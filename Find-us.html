@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Spelkollektivet</title>
-    <link rel="stylesheet" type="text/css" href="Find-usCSS.css"> 
+    <link rel="stylesheet" type="text/css" href="CSS.css"> 
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
@@ -12,11 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    
+
+<body id="bodyFind">
        <header id="header">
     <img src="IQ_Logo_White.png" alt="" class="logo">
     <nav>
@@ -51,7 +51,7 @@
             362 51 Väckelsång<br>
             <a href="mailto:contact@theindiequest.com">contact@theindiequest.com</a><br>
             0701 - 72 99 88</p>
-            <p>Follow us on <a href="https://www.facebook.com/theindiequest">Facebook</a> or join our <a href="https://discord.gg/YBq4xYX">Discord</a>.</p>
+            <p>Follow us on <a href="https://www.facebook.com/theindiequest">Facebook</a> or join our <a href="https://discord.gg/Nb5w8kmPVP">Discord</a>.</p>
         </div>
     </section>
 
@@ -127,22 +127,7 @@
         </div>
     </footer>
     <div class="copyright-area">
-        <p>&copy; 2024, All Right Reserved <a href="index.html">Spelkollektivet</a></p>
+        <p>&copy; 2024, All Right Reserved Spelkollektivet</p>
     </div>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const button = document.querySelector('.subscribe-form button');
-        button.addEventListener('mousemove', (e) => {
-            const rect = button.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            button.style.setProperty('--x', `${x}px`);
-            button.style.setProperty('--y', `${y}px`);
-        });
-        button.addEventListener('mouseleave', () => {
-            button.style.setProperty('--opacity', 0);
-        });
-    });
-</script>
 </body>
 </html>   

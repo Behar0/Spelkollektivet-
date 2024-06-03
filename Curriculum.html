@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Spelkollektivet</title>
-    <link rel="stylesheet" type="text/css" href="CurriculumCSS.css">
+    <link rel="stylesheet" type="text/css" href="CSS.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
@@ -12,7 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<body id="bodyCurriculum">
 
      <script src="https://unpkg.com/scrollreveal"></script>
     <script type="text/javascript" src="JAVA.js"></script>
@@ -39,14 +43,13 @@
     </nav>
 </header>
 
-<h1 class="Curriculumh1">Welcome to the Curriculum of The Indie Quest. Our program is divided into 5 sections, intended to be covered in 1 year of full-time study.</h1>
+<section id="sectionCurriculum" class="intro"></section>
 
-<section class="intro"></section>
-
-<h1 class="Curriculumh1">Curriculum Timeline</h1>
+<h1 id="Curriculumh1">Welcome to the Curriculum of The Indie Quest. Our program is divided into 5 sections, intended to be covered in 1 year of full-time study.</h1>
+<h1 id="Curriculumh1">Curriculum Timeline</h1>
 <div class="timeline">
     <div class="marker">
-        <span>1. Preperation</span>
+        <span>1. Preparation</span>
     </div>
     <div class="marker">
         <span>2. Text adventure</span>
@@ -65,7 +68,7 @@
     </div>
 </div>
 <div class="content">
-    <section id="section1" class="fade">
+    <section id="section1">
         <h2>1. Preparation</h2>
         <p>The Indie Quest requires no previous experience in programming. Through carefully designed missions, you will conquer the basics of programming by coding individual aspects of games. You will learn how computers work and touch on other aspects of computer science, such as computational thinking and algorithm design, so that you will have the foundation to tackle any programming problems thrown your way.</p>
         <p><strong>Skills covered:</strong></p>
@@ -77,10 +80,10 @@
             <li>Text manipulation</li>
             <li>User interaction</li>
         </ul>
-        <img src="Note_02.png" class="Curriculum-img">
+        <img src="Note_02.png">
     </section>
 
-    <section id="section2" class="fade">
+    <section id="section2">
         <h2>2. Text Adventure</h2>
         <p>It's time to design your first game. You will choose your own theme and write a text adventure with various locations, characters, and objects to manipulate. It's up to you what the goal of the game is. The project will be bigger than previous missions and require a more organized approach.</p>
         <p><strong>Skills covered:</strong></p>
@@ -90,10 +93,10 @@
             <li>Functional programming basics</li>
             <li>Project management</li>
         </ul>
-        <img src="Note_03.png" class="Curriculum-img">
+        <img src="Note_03.png">
     </section>
 
-    <section id="section3" class="fade">
+    <section id="section3">
         <h2>3. Arcade Game</h2>
         <p>Your next project is a simple, top-down, one-screen arcade game, such as a space shooter. You will take your coding knowledge and use it to learn game programming with the Unity game engine.</p>
         <p><strong>Skills covered:</strong></p>
@@ -108,15 +111,14 @@
             <li>Basic artificial intelligence</li>
             <li>Agile development</li>
         </ul>
-        <img src="Indie Quest Map.png" class="Curriculum-img">
     </section>
 
-    <section id="section3-5" class="fade">
+    <section id="section3-5">
         <h2>3.5 Game Jam</h2>
         <p>Before we move on to more learning, you will participate in a 72-hour game jam that will bring everyone at Spellkollektivet together to create games based around a shared theme. You could work alone or take the opportunity to team up, either with other students or join the rest of the developers from the house.</p>
     </section>
 
-    <section id="section4" class="fade">
+    <section id="section4">
         <h2>4. Platformer</h2>
         <p>With basic game architecture knowledge under your belt, it's time to create a complex game that will use all the most common components you'll need in any game project. This will be the last guided project before starting your final game.</p>
         <p><strong>Skills covered:</strong></p>
@@ -131,10 +133,10 @@
             <li>Saving and loading</li>
             <li>Audio</li>
         </ul>
-        <img src="Note_DayNightCycle.png" class="Curriculum-img">
+        <img src="Note_DayNightCycle.png">
     </section>
 
-    <section id="section5" class="fade">
+    <section id="section5">
         <h2>5. Final Project</h2>
         <p>The game you will graduate the program with will be completely up to you. It's time to put all you've learned into a polished product, optionally learning some advanced topics along the way. You can go at it alone, or join forces with another classmate or two.</p>
         <p><strong>Optional skills to explore:</strong></p>
@@ -147,10 +149,8 @@
             <li>Marketing</li>
             <li>Publishing</li>
         </ul>
-        <img src="IQ_Background_Notes.png" class="Curriculum-imgFinal">
     </section>
 </div>
-
      <footer class="footer-section">
         <div class="footer-content">
             <div class="footer-logo-text">
@@ -223,25 +223,9 @@
         </div>
     </footer>
     <div class="copyright-area">
-        <p>&copy; 2024, All Right Reserved <a href="index.html">Spelkollektivet</a></p>
+        <p>&copy; 2024, All Right Reserved Spelkollektivet</p>
     </div>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const button = document.querySelector('.subscribe-form button');
-        button.addEventListener('mousemove', (e) => {
-            const rect = button.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            button.style.setProperty('--x', `${x}px`);
-            button.style.setProperty('--y', `${y}px`);
-        });
-        button.addEventListener('mouseleave', () => {
-            button.style.setProperty('--opacity', 0);
-        });
-    });
-</script>
 
-<!-- scrollreveal effect -->
 <script src="https://unpkg.com/scrollreveal"></script>
 <script type="text/javascript" src="JAVA.js"></script>
 

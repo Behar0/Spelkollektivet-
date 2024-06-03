@@ -1,3 +1,5 @@
+// Need help online for JAVA
+
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM fully loaded and parsed');
     try {
@@ -20,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// 
+
 function showSidebar() {
     const sidebar = document.querySelector(".sidebar");
     sidebar.style.display = 'flex';
@@ -38,15 +42,10 @@ function closeSidebar() {
 
 window.addEventListener('scroll', function() {
     const header = document.getElementById('header');
-    if (window.scrollY > 50) { // Adjust the scroll value as needed
+    if (window.scrollY > 50) { 
         header.classList.add('scrolled');
     } else {
         header.classList.remove('scrolled');
     }
 });
-
-
-
-// Need help online for JAVA, Java much harder 
-
 
